@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	    <script src="project2.js" defer></script>
+	    <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+	    <title>Valorant API</title>
+    </head>
+    <body>
+        <img class="background" src="background.jpg" alt="Aleq">
+        <div class="navbar">
+		    <div class="navbar1">
+	  		    <a href="home.html">VALORANT API</a></li>
+		    </div>
+        </div>
+        <br><br>
+        <div class="searchbox">
+            <br>
+            <p>Simply type the name of an <b>Agent</b> and all the information will be displayed below. 
+                Click on the random button in order to get a Random <b>Agent</b>.
+              </p>
+            <br>
+            <div class="search">
+                <button onclick="getRandomAgent()" id = "button1">Random</button>
+                <input type="text" 
+                id = "text1" 
+                name = "text1"
+                placeholder="Search..">
+                <button onclick="getAgentInfo()" id = "button1">Submit</button>
+                </form>
+            </div>
+            <br><br>
+        </div>
+        <br><br>
+        <div class="info">
+            <br>
+            <div id="header1"><center><h1><b>Agent Info</b></h1></center></div>
+            <br>
+            <div id="name">
+                <h2>Name: </h2><h3 id="name1"></h3>
+            </div>
+            <div id="role">
+                <br><br><h2>Role: </h2><h3 id="role1"></h3>
+            </div>
+            <div id="description">
+                <h2>Description: </h2> <h3 id="description1"></h3>
+            </div>
+            <div id="img">
+                <h2>Appearance:</h2> 
+                <center><img src="white.png" id="img1" width="400px" height="400px"></center>
+            </div>
+            <div id="header2"><center><h1><b>Abilities:</b></h1></center></div>
+            <div id="abilities">
+                <div id="ability1">
+                    <h2>Ability 1</h2><br><br>
+                    <h3>Name: </h3><h4 id="ability1name"></h4><br>
+                    <br><h5>Description:</h5><h6 id="ability1desc"></h6>
+                </div>
+                <div id="ability2">
+                    <h2>Ability 2</h2><br><br>
+                    <h3>Name: </h3><h4 id="ability2name"></h4><br>
+                    <br><h5>Description: </h5><h6 id="ability2desc"></h6>
+                </div>
+                <div id="ability3">
+                    <h2>Ability 3</h2><br><br>
+                    <h3>Name: </h3><h4 id="ability3name"></h4><br>
+                    <br><h5>Description: </h5><h6 id="ability3desc"></h6>
+                </div>
+                <div id="ability4">
+                    <h2>Ability 4</h2><br><br>
+                    <h3>Name: </h3><h4 id="ability4name"></h4><br>
+                    <br><h5>Description: </h5><h6 id="ability4desc"></h6>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+  
